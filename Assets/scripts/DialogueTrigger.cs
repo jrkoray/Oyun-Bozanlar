@@ -13,14 +13,8 @@ public class DialogueTrigger : MonoBehaviour
     	{
 		if(!isTallked)
 		{
-        		TriggerDialogue();
 			isTallked = true;
 		}
     	}
-
-	public void TriggerDialogue ()
-	{
-		FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-	}
 
 }

@@ -5,8 +5,10 @@ using UnityEngine;
 public class Village : MonoBehaviour
 {
     playerController playerControl;
+       public mouse fare;
 
     public playerController playerScript;
+    //public mouse fareScript;
 
     //----------Bool-------
     public bool HaveBalta;
@@ -17,9 +19,10 @@ public class Village : MonoBehaviour
     //------------------------------------
     public GameObject Balta;
     public GameObject Anahtar;
+
     void Start()
     {
-        playerControl = GameObject.Find("player").GetComponent<playerController>();   
+        playerControl = GameObject.Find("player").GetComponent<playerController>();    
     }
 
 
@@ -67,6 +70,7 @@ public class Village : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 playerScript.enabled = false;
+                fare.enabled = false;
                 Konustumu = true;
             }
         }
