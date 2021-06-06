@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 50d22cbf0c300ff4281bb179fa9422c8
   - enabled: 1
+    path: Assets/Scenes/CloudScene.unity
+    guid: e0486b27873a98d4c975f90deaaddfb7
+  - enabled: 1
     path: Assets/Scenes/Village.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: b94ee59f12f411f488e6df197429e012
   m_configObjects: {}

@@ -35,12 +35,12 @@ public class ornek : MonoBehaviour
                     bul = bulut3;
                     break;
             }
-            float z = Random.Range(-300, -800);
+            float z = Random.Range(1000, 1800);
             float x = Random.Range(10, 20);
-            float hiz = Random.Range(300, 800);
             GameObject bu = Instantiate(bul, new Vector3(Random.Range(-2000, 2000), Random.Range(-150, 150), Random.Range(-2000, 2000)), bulut.transform.rotation) as GameObject;
             bu.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, z));
             bu.transform.localScale += new Vector3(x, x, x);
+            GameObject.Destroy(bu, 30f);
         }
     }
 }
